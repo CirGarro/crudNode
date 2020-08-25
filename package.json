@@ -7,9 +7,17 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CirGarro/crudNode.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CirGarro/crudNode/issues"
+  },
+  "homepage": "https://github.com/CirGarro/crudNode#readme",
   "dependencies": {
     "express": "^4.17.1",
     "nodemon": "^2.0.4"
