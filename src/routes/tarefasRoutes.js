@@ -1,6 +1,12 @@
 module.exports = function (app) {
-    const usuarios = require('../controllers/tarefasController')
+    const tarefas = require('../controllers/tarefasController')
     app.route('/tarefas')
-        .get(usuarios.listAll)
-        .post(usuarios.createOne)
+        .get(tarefas.listAll)
+        .post(tarefas.createOne)
+    
+    app.route('/tarefas/:id')
+        .get(tarefas.showOne)
+        .put(tarefas.update)
+        .delete(tarefas.delete)
+
 }
